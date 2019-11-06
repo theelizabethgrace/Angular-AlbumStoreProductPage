@@ -4,7 +4,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ProductService {
-private _albumUrl = "../assets/album.js";
+
+private _albumUrl = '../assets/album.js';
 getAlbum(id: number){
   return this._http.get(_albumUrl).map((response)=>
   response.json());
